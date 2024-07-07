@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Maker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz Maker</h1>
+        <div id="create-quiz">
+            <h2>Create a Quiz</h2>
+            <form id="quiz-form">
+                <div>
+                    <label for="quiz-title">Quiz Title:</label>
+                    <input type="text" id="quiz-title" required>
+                </div>
+                <div id="questions-container">
+                    <h3>Questions</h3>
+                    <!-- Questions will be added here dynamically -->
+                </div>
+                <button type="button" id="add-question">Add Question</button>
+                <button type="submit">Save Quiz</button>
+            </form>
+        </div>
+
+        <div id="take-quiz">
+            <h2>Take a Quiz</h2>
+            <select id="select-quiz">
+                <!-- Options will be added here dynamically -->
+            </select>
+            <div id="quiz-questions">
+                <!-- Quiz questions will be displayed here -->
+            </div>
+            <button id="submit-quiz">Submit Quiz</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
